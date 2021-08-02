@@ -18,8 +18,6 @@ export const useFetch = (url) => {
         
         /*esto  vuelve a colocar un nuevo estado para visualizar el loading*/
         setState({data:null, loading:true, error:null});
-
-
         fetch(url)
             .then((res) => res.json())
             .then(data => {
